@@ -2,6 +2,9 @@
 var express = require('express'); // requre the express framework
 var app = express();
 var fs = require('fs'); //require file system object
+var cors = require('cors')
+
+app.use(cors())
 
 // Endpoint to Get a list of users
 app.get('/', function (req, res) {
