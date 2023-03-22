@@ -9,7 +9,7 @@ app.use(cors())
 // Endpoint to Get a list of users
 app.get('/', function (req, res) {
     res.set('Access-Control-Allow-Origin', '*');
-    fs.readFile(__dirname + "/" + "db.json", 'utf8', function (err, data) {
+    fs.readFile(__dirname + "/" + "twitter.json", 'utf8', function (err, data) {
         console.log(data);
         res.end(data); // you can also use res.send()
     });
